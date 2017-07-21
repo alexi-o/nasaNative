@@ -1,9 +1,14 @@
 import React from 'react';
-import { AppRegistry, Text } from 'react-native';
+import { AppRegistry, Text, View } from 'react-native';
+import Header from './src/components/Header';
+import NasaList from './src/components/NasaList';
 
 const App = () => {
   return(
-    <Text>Testing</Text>
+    <View>
+      <Header headerText={'Space Stuff'}/>
+      <NasaList />
+    </View>
   )
 };
 
